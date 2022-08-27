@@ -8,7 +8,7 @@ body{
     font-size: 14px;
     background-color: hsl(30, 38%, 92%);
     display: flex;
-    height: 1000px;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 
@@ -18,7 +18,7 @@ body{
 .container{
     background-color: white;
     border-radius: 10px;
-    max-width: 700px;
+    max-width: 750px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
@@ -93,3 +93,29 @@ button.button:hover{
     
 }
 
+@media only screen and (max-width: 735px){
+    
+    body{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        height: 1500px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .container{
+        grid-template-columns: 1fr;
+        margin: 30px 30px;
+}
+
+.img img{
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    display: inherit;
+    
+} 
+    
+}
